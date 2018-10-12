@@ -1,0 +1,132 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "strapi-plugin-settings-manager@alpha",
+        "scope": null,
+        "escapedName": "strapi-plugin-settings-manager",
+        "name": "strapi-plugin-settings-manager",
+        "rawSpec": "alpha",
+        "spec": "alpha",
+        "type": "tag"
+      },
+      "C:\\Users\\guilh\\Documents\\Projetos\\Leopardos\\API"
+    ]
+  ],
+  "_from": "strapi-plugin-settings-manager@alpha",
+  "_hasShrinkwrap": false,
+  "_id": "strapi-plugin-settings-manager@3.0.0-alpha.14.3",
+  "_location": "/strapi-plugin-settings-manager",
+  "_nodeVersion": "10.8.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/strapi-plugin-settings-manager_3.0.0-alpha.14.3_1539012851939_0.9767230926795989"
+  },
+  "_npmUser": {
+    "name": "lauriejim",
+    "email": "j.laurie6993@gmail.com"
+  },
+  "_npmVersion": "5.1.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "strapi-plugin-settings-manager@alpha",
+    "scope": null,
+    "escapedName": "strapi-plugin-settings-manager",
+    "name": "strapi-plugin-settings-manager",
+    "rawSpec": "alpha",
+    "spec": "alpha",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/strapi-plugin-settings-manager/-/strapi-plugin-settings-manager-3.0.0-alpha.14.3.tgz",
+  "_shasum": "08a0f81b99e93300dedc49beea1a0bc241b4cce8",
+  "_shrinkwrap": null,
+  "_spec": "strapi-plugin-settings-manager@alpha",
+  "_where": "C:\\Users\\guilh\\Documents\\Projetos\\Leopardos\\API",
+  "author": {
+    "name": "Strapi team",
+    "email": "hi@strapi.io",
+    "url": "http://strapi.io"
+  },
+  "bugs": {
+    "url": "https://github.com/strapi/strapi/issues"
+  },
+  "dependencies": {},
+  "description": "Strapi plugin to manage settings.",
+  "devDependencies": {
+    "flag-icon-css": "^2.8.0",
+    "react-select": "^1.0.0-rc.5",
+    "strapi-helper-plugin": "3.0.0-alpha.14.3"
+  },
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-+/6dO97loLFk/Zl9iumx5Z3+xfrsAIVHqBQsDtwuUa+lnvxU+Mw5h0EJNJvVPi/U0O6+4wCvVpMu5qAxQbCcVQ==",
+    "shasum": "08a0f81b99e93300dedc49beea1a0bc241b4cce8",
+    "tarball": "https://registry.npmjs.org/strapi-plugin-settings-manager/-/strapi-plugin-settings-manager-3.0.0-alpha.14.3.tgz",
+    "fileCount": 624,
+    "unpackedSize": 8692183,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbu3j1CRA9TVsSAnZWagAAjwoP/iKzceRDz8ESihxqGgLX\n4fK3y8uPVhc7UUwPyLwPn/tpeBV4WI8Tx5UtKat+i0Ly/L+j/fA9YzMZ8/Th\n/mOY3jUGccOYmKmPEbyWxTzg15wKnf9dLbov/EEwnww8p1sLHVz4uInvKHiG\nKwvDKKnefIO6A4/0wGJCgHn4zGdH8HLj+MqHrgbCpImrUru10zzuykM0DsKD\nNBxpEDOrrJTHQMveTryODIdiciLxhlJSEX+Ri2f0fLOjaZgTNAAdWj9BzOg9\nfTvOvufFnNeDREC8+ZnoubAKio/U9MhPoTpgtY1LKVZvzTJqFd71s/ZKg9Cz\nuB7B6AaNjM65fgog23EKjXu7DFbzG2wFQDa5iy4P32ndBTBdJDNXaftRwVKt\nERVBjoPik3cQx/N97qY6bCDUhh8gFZ4s1ZCyrXE+D1cGIJSe4vjLqx4r3Fmv\nbseaPiTuqoL6FbFbyD8qVfQBsDv2QBRE0lY+64zbXqH2p2Ccjm7wCt+ilQLB\nXFtLNa9ijrR8LnGfGM0q4TQygOLUTqBzMPd5PBTUZdmZ2IuQtR/kErchh59X\nWIPpvc4gOArSJwY3T8rpBNJ6av/GVnjf8x2J299y5b9flCO0crhS1Wbk3W9V\nvImkyEuD/YWs2P63wtDlN2XS0r8WrcEPKZes1Ogsq3V7Z7cEokIXN1R7Sc33\nb/Vy\r\n=uPh2\r\n-----END PGP SIGNATURE-----\r\n"
+  },
+  "engines": {
+    "node": ">= 9.0.0",
+    "npm": ">= 5.0.0"
+  },
+  "homepage": "https://github.com/strapi/strapi#readme",
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "Strapi team",
+      "email": "hi@strapi.io",
+      "url": "http://strapi.io"
+    }
+  ],
+  "name": "strapi-plugin-settings-manager",
+  "optionalDependencies": {},
+  "readme": "# Strapi plugin",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/strapi/strapi.git"
+  },
+  "scripts": {
+    "analyze": "node ./node_modules/strapi-helper-plugin/lib/internals/scripts/analyze.js",
+    "analyze:clean": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/rimraf stats.json",
+    "build": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/cross-env NODE_ENV=production node node_modules/strapi-helper-plugin/node_modules/.bin/webpack --config node_modules/strapi-helper-plugin/lib/internals/webpack/webpack.prod.babel.js --color -p --progress",
+    "build:clean": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/rimraf admin/build",
+    "build:dev": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/cross-env NODE_ENV=development node ./node_modules/strapi-helper-plugin/node_modules/.bin/webpack --config node_modules/strapi-helper-plugin/lib/internals/webpack/webpack.prod.babel.js --color -p --progress",
+    "generate": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/plop --plopfile ./node_modules/strapi-helper-plugin/lib/internals/generators/index.js",
+    "lint": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/eslint --ignore-path .gitignore --ignore-pattern '/admin/build/' --config ./node_modules/strapi-helper-plugin/lib/internals/eslint/.eslintrc.json admin",
+    "preanalyze": "npm run analyze:clean",
+    "prebuild": "npm run build:clean",
+    "prepublishOnly": "IS_MONOREPO=true npm run build",
+    "prettier": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/prettier --single-quote --trailing-comma es5 --write \"{admin,__{tests,mocks}__}/**/*.js\"",
+    "start": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/cross-env NODE_ENV=development node ./node_modules/strapi-helper-plugin/lib/server",
+    "test": "npm run lint"
+  },
+  "strapi": {
+    "name": "Settings Manager",
+    "icon": "wrench",
+    "description": "settings-manager.plugin.description"
+  },
+  "version": "3.0.0-alpha.14.3",
+  "warnings": [
+    {
+      "code": "ENOTSUP",
+      "required": {
+        "node": ">= 9.0.0",
+        "npm": ">= 5.0.0"
+      },
+      "pkgid": "strapi-plugin-settings-manager@3.0.0-alpha.14.3"
+    },
+    {
+      "code": "ENOTSUP",
+      "required": {
+        "node": ">= 9.0.0",
+        "npm": ">= 5.0.0"
+      },
+      "pkgid": "strapi-plugin-settings-manager@3.0.0-alpha.14.3"
+    }
+  ]
+}

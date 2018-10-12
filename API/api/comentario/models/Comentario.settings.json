@@ -1,0 +1,38 @@
+{
+  "connection": "default",
+  "collectionName": "comentario",
+  "info": {
+    "name": "comentario",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Conteudo": {
+      "default": "",
+      "type": "text",
+      "required": true,
+      "minLength": 10,
+      "maxLength": 186
+    },
+    "Data": {
+      "default": "",
+      "type": "date",
+      "required": true
+    },
+    "respostacomentario": {
+      "model": "respostacomentario",
+      "via": "comentario"
+    },
+    "user": {
+      "model": "user",
+      "via": "comentario",
+      "plugin": "users-permissions"
+    },
+    "post": {
+      "model": "post",
+      "via": "comentario"
+    }
+  }
+}

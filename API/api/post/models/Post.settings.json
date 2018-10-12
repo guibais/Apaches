@@ -1,0 +1,44 @@
+{
+  "connection": "default",
+  "collectionName": "post",
+  "info": {
+    "name": "post",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Titulo": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "minLength": 10,
+      "maxLength": 50
+    },
+    "dataCriacao": {
+      "default": "",
+      "type": "date",
+      "required": true
+    },
+    "Tags": {
+      "default": "",
+      "type": "string"
+    },
+    "user": {
+      "model": "user",
+      "via": "post",
+      "columnName": "Autor",
+      "plugin": "users-permissions"
+    },
+    "Conteudo": {
+      "default": "",
+      "type": "text",
+      "required": true
+    },
+    "comentario": {
+      "collection": "comentario",
+      "via": "post"
+    }
+  }
+}

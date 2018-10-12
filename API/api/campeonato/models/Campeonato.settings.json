@@ -1,0 +1,36 @@
+{
+  "connection": "default",
+  "collectionName": "camponato",
+  "info": {
+    "name": "campeonato",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Nome": {
+      "default": "",
+      "maxLength": 1000,
+      "minLength": 10,
+      "type": "string",
+      "required": true
+    },
+    "dataInicio": {
+      "default": "",
+      "type": "date"
+    },
+    "dataFim": {
+      "default": "",
+      "type": "date"
+    },
+    "time": {
+      "collection": "time",
+      "via": "campeonato"
+    },
+    "partida": {
+      "collection": "partida",
+      "via": "campeonato"
+    }
+  }
+}

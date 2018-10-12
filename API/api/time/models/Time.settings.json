@@ -1,0 +1,49 @@
+{
+  "connection": "default",
+  "collectionName": "time",
+  "info": {
+    "name": "time",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Nome": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "minLength": 3,
+      "maxLength": 100
+    },
+    "dataCriacao": {
+      "default": "",
+      "type": "date"
+    },
+    "Estadio": {
+      "default": "",
+      "type": "string"
+    },
+    "Presidente": {
+      "default": "",
+      "type": "string"
+    },
+    "Coach": {
+      "default": "",
+      "type": "string"
+    },
+    "jogador": {
+      "collection": "jogador",
+      "via": "time"
+    },
+    "campeonato": {
+      "collection": "campeonato",
+      "via": "time",
+      "dominant": true
+    },
+    "partida": {
+      "collection": "partida",
+      "via": "time"
+    }
+  }
+}

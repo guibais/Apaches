@@ -1,0 +1,46 @@
+{
+  "connection": "default",
+  "collectionName": "jogador",
+  "info": {
+    "name": "jogador",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Nome": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "Capitao": {
+      "default": false,
+      "type": "boolean"
+    },
+    "Posicao": {
+      "default": "",
+      "type": "string"
+    },
+    "Idade": {
+      "default": "",
+      "type": "integer"
+    },
+    "Sobre": {
+      "default": "",
+      "type": "text"
+    },
+    "Conquistas": {
+      "default": "",
+      "type": "string"
+    },
+    "Numero": {
+      "default": "",
+      "type": "integer"
+    },
+    "time": {
+      "model": "time",
+      "via": "jogador"
+    }
+  }
+}

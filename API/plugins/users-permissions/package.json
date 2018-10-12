@@ -1,0 +1,138 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "strapi-plugin-users-permissions@alpha",
+        "scope": null,
+        "escapedName": "strapi-plugin-users-permissions",
+        "name": "strapi-plugin-users-permissions",
+        "rawSpec": "alpha",
+        "spec": "alpha",
+        "type": "tag"
+      },
+      "C:\\Users\\guilh\\Documents\\Projetos\\Leopardos\\API"
+    ]
+  ],
+  "_from": "strapi-plugin-users-permissions@alpha",
+  "_hasShrinkwrap": false,
+  "_id": "strapi-plugin-users-permissions@3.0.0-alpha.14.3",
+  "_location": "/strapi-plugin-users-permissions",
+  "_nodeVersion": "10.8.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/strapi-plugin-users-permissions_3.0.0-alpha.14.3_1539012955543_0.6632572089181628"
+  },
+  "_npmUser": {
+    "name": "lauriejim",
+    "email": "j.laurie6993@gmail.com"
+  },
+  "_npmVersion": "5.1.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "strapi-plugin-users-permissions@alpha",
+    "scope": null,
+    "escapedName": "strapi-plugin-users-permissions",
+    "name": "strapi-plugin-users-permissions",
+    "rawSpec": "alpha",
+    "spec": "alpha",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/strapi-plugin-users-permissions/-/strapi-plugin-users-permissions-3.0.0-alpha.14.3.tgz",
+  "_shasum": "593968e19df7854ac948d209d65784cb0838691d",
+  "_shrinkwrap": null,
+  "_spec": "strapi-plugin-users-permissions@alpha",
+  "_where": "C:\\Users\\guilh\\Documents\\Projetos\\Leopardos\\API",
+  "author": {
+    "name": "Strapi team",
+    "email": "hi@strapi.io",
+    "url": "http://strapi.io"
+  },
+  "bugs": {
+    "url": "https://github.com/strapi/strapi/issues"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "grant-koa": "^3.8.1",
+    "jsonwebtoken": "^8.1.0",
+    "koa": "^2.1.0",
+    "koa2-ratelimit": "^0.6.1",
+    "purest": "^2.0.1",
+    "request": "^2.83.0",
+    "uuid": "^3.1.0"
+  },
+  "description": "Protect your API with a full-authentication process based on JWT",
+  "devDependencies": {
+    "strapi-helper-plugin": "3.0.0-alpha.14.3"
+  },
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-akRa+EyCVcQACKc3YCf2cEgkrrlB5GuKZjKYPe3YJOwBag8HjT+pR2pK1EdgCJ8JflYuZ45IaQXOguBylGOAug==",
+    "shasum": "593968e19df7854ac948d209d65784cb0838691d",
+    "tarball": "https://registry.npmjs.org/strapi-plugin-users-permissions/-/strapi-plugin-users-permissions-3.0.0-alpha.14.3.tgz",
+    "fileCount": 119,
+    "unpackedSize": 1714720,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbu3lcCRA9TVsSAnZWagAAhUIP/RjlajoQZz/pR1i8DTBM\nROdW7rMnqm/+k2AqYKRsr9tl5Y4wRN4lniXzIOyGAvIr+MjhZXEoSr/+EK+P\no94HvMa5nvEOmrXCgjq8sRj7MZzH39cIVukCttRgTghvfOImyQmskEdbjPyi\nO6LtcC1zzca5o0l7jqLoV6x9K2OjJa+uH3GQN2Hn0i3RQLQ5zYmk/kVfy4sP\n9EUt6tYbSqfmCP5k5q9YVzAHWtbRmJgBDOzCK4whVwgSnKWyVKaxbSWBowb1\n4iBMWifw6ff0J2Qu9s1hdQ9apGzYEB6+BdJyH1itEt99/YH3YEkt+ZsEJvx6\nlAE6V4ETKxsYxngbrDVutQeXU3B/+Dd6L4Ii236uD9xubwk83w3JOEzk+RAe\n+2FLc8yKOGd4ntS6vkMeH/GE2qIVyRyXR1MJ4HMpAVtWXZQMkWc8EKK/l8EK\njY9IoP825PuJuVkoshiQz/tJ32r5G8fLWYvr8vOU1Tl0xUIgYUaJGsw2K7Oz\nYxMroQRhoJXUTBcssO1n8kV9GXNEFKNhO9J7sJhRT9HF8xs38PBtr7XMiEpv\npumk8gq6mCbo5hap8CiWm9CDaFCcmU77j4XBtb/5bLj1xuOUOsx+5PZyW9DV\nUzPGpFvj+N8zlPHzurq36IGPgrmJ5SZmnPOcSa4aC9DYksfvKOtB8mD3xUSC\nD5nJ\r\n=nbIr\r\n-----END PGP SIGNATURE-----\r\n"
+  },
+  "engines": {
+    "node": ">= 9.0.0",
+    "npm": ">= 5.0.0"
+  },
+  "homepage": "https://github.com/strapi/strapi#readme",
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "Strapi team",
+      "email": "hi@strapi.io",
+      "url": "http://strapi.io"
+    }
+  ],
+  "name": "strapi-plugin-users-permissions",
+  "optionalDependencies": {},
+  "readme": "# Strapi plugin",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/strapi/strapi.git"
+  },
+  "scripts": {
+    "analyze": "node ./node_modules/strapi-helper-plugin/lib/internals/scripts/analyze.js",
+    "analyze:clean": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/rimraf stats.json",
+    "build": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/cross-env NODE_ENV=production node node_modules/strapi-helper-plugin/node_modules/.bin/webpack --config node_modules/strapi-helper-plugin/lib/internals/webpack/webpack.prod.babel.js --color -p --progress",
+    "build:clean": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/rimraf admin/build",
+    "build:dev": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/cross-env NODE_ENV=development node ./node_modules/strapi-helper-plugin/node_modules/.bin/webpack --config node_modules/strapi-helper-plugin/lib/internals/webpack/webpack.prod.babel.js --color -p --progress",
+    "generate": "node ./node_modules/plop/plop.js --plopfile node_modules/strapi-helper-plugin/lib/internals/generators/index.js",
+    "preanalyze": "npm run analyze:clean",
+    "prebuild": "npm run build:clean",
+    "prepublishOnly": "IS_MONOREPO=true npm run build",
+    "prettier": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/prettier --single-quote --trailing-comma es5 --write \"{admin,__{tests,mocks}__}/**/*.js\"",
+    "start": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/cross-env NODE_ENV=development node ./node_modules/strapi-helper-plugin/lib/server",
+    "test": "echo \"Error: no test specified\""
+  },
+  "strapi": {
+    "name": "Roles & Permissions",
+    "icon": "users",
+    "description": "users-permissions.plugin.description"
+  },
+  "version": "3.0.0-alpha.14.3",
+  "warnings": [
+    {
+      "code": "ENOTSUP",
+      "required": {
+        "node": ">= 9.0.0",
+        "npm": ">= 5.0.0"
+      },
+      "pkgid": "strapi-plugin-users-permissions@3.0.0-alpha.14.3"
+    },
+    {
+      "code": "ENOTSUP",
+      "required": {
+        "node": ">= 9.0.0",
+        "npm": ">= 5.0.0"
+      },
+      "pkgid": "strapi-plugin-users-permissions@3.0.0-alpha.14.3"
+    }
+  ]
+}

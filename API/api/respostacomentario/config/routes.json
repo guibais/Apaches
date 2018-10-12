@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/respostacomentarios",
+      "handler": "Respostacomentario.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/respostacomentarios/count",
+      "handler": "Respostacomentario.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/respostacomentarios/:_id",
+      "handler": "Respostacomentario.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/respostacomentarios",
+      "handler": "Respostacomentario.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/respostacomentarios/:_id",
+      "handler": "Respostacomentario.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/respostacomentarios/:_id",
+      "handler": "Respostacomentario.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

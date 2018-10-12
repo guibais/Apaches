@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/partidas",
+      "handler": "Partida.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/partidas/count",
+      "handler": "Partida.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/partidas/:_id",
+      "handler": "Partida.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/partidas",
+      "handler": "Partida.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/partidas/:_id",
+      "handler": "Partida.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/partidas/:_id",
+      "handler": "Partida.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

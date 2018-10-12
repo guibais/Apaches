@@ -1,0 +1,42 @@
+{
+  "connection": "default",
+  "collectionName": "partida",
+  "info": {
+    "name": "partida",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "campeonato": {
+      "model": "campeonato",
+      "via": "partida"
+    },
+    "placarCasa": {
+      "default": 0,
+      "type": "integer",
+      "required": true
+    },
+    "placarFora": {
+      "default": 0,
+      "type": "integer"
+    },
+    "time": {
+      "collection": "time",
+      "dominant": true,
+      "via": "partida"
+    },
+    "Situacao": {
+      "default": "livre",
+      "type": "enumeration",
+      "enum": [
+        "livre",
+        "oitavas",
+        "quartas",
+        "semi-finais",
+        "finais"
+      ]
+    }
+  }
+}

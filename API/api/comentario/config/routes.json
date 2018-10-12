@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/comentarios",
+      "handler": "Comentario.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/comentarios/count",
+      "handler": "Comentario.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/comentarios/:_id",
+      "handler": "Comentario.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/comentarios",
+      "handler": "Comentario.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/comentarios/:_id",
+      "handler": "Comentario.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/comentarios/:_id",
+      "handler": "Comentario.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

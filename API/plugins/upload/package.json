@@ -1,0 +1,104 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "strapi-plugin-upload@alpha",
+        "scope": null,
+        "escapedName": "strapi-plugin-upload",
+        "name": "strapi-plugin-upload",
+        "rawSpec": "alpha",
+        "spec": "alpha",
+        "type": "tag"
+      },
+      "C:\\Users\\guilh\\Documents\\Projetos\\Leopardos\\API"
+    ]
+  ],
+  "_from": "strapi-plugin-upload@alpha",
+  "_hasShrinkwrap": false,
+  "_id": "strapi-plugin-upload@3.0.0-alpha.14.3",
+  "_location": "/strapi-plugin-upload",
+  "_nodeVersion": "10.8.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/strapi-plugin-upload_3.0.0-alpha.14.3_1539012904359_0.6150413042718808"
+  },
+  "_npmUser": {
+    "name": "lauriejim",
+    "email": "j.laurie6993@gmail.com"
+  },
+  "_npmVersion": "5.1.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "strapi-plugin-upload@alpha",
+    "scope": null,
+    "escapedName": "strapi-plugin-upload",
+    "name": "strapi-plugin-upload",
+    "rawSpec": "alpha",
+    "spec": "alpha",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/strapi-plugin-upload/-/strapi-plugin-upload-3.0.0-alpha.14.3.tgz",
+  "_shasum": "b8ee8b65f4583ca17c07cf81ec4e9a27dd702984",
+  "_shrinkwrap": null,
+  "_spec": "strapi-plugin-upload@alpha",
+  "_where": "C:\\Users\\guilh\\Documents\\Projetos\\Leopardos\\API",
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "dependencies": {
+    "react-copy-to-clipboard": "^5.0.1",
+    "strapi-upload-local": "3.0.0-alpha.14.3",
+    "stream-to-array": "^2.3.0",
+    "uuid": "^3.2.1"
+  },
+  "description": "This is the description of the plugin.",
+  "devDependencies": {
+    "strapi-helper-plugin": "3.0.0-alpha.14.3"
+  },
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-d9VbEmg1eS11OOI42r8eBWF2lD6Y3i35OCyuhmX3Lq8pyr9DzYZugMcprZ71i6HIuc4wQq+O/LBP6mfQgt4fIw==",
+    "shasum": "b8ee8b65f4583ca17c07cf81ec4e9a27dd702984",
+    "tarball": "https://registry.npmjs.org/strapi-plugin-upload/-/strapi-plugin-upload-3.0.0-alpha.14.3.tgz",
+    "fileCount": 72,
+    "unpackedSize": 1169493,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbu3kpCRA9TVsSAnZWagAA74UP/2cVYvejzM5PMRVBKhqG\nqAkP6lLssPEbZrLRjqlVlyWyKLvyhkq5AiBfK0HErWVbMZYaTzXsVrDrptrw\npoogssvXiLWcJbOnsVEw+jDQLL3ybcNR08Mx+X3mG57HshFrkGDj0A3kMGlA\nV5JQaqXCm8p1rlFGVyNEvMzkJv6nIL0ZFRlmrciJ2ZINQqz2cFrL9VnH4t1R\nHxo/kq+kSCFVCTG/qanMOj1DSxUW1MP4pFDQTt5gVXk+T0InUsHc5eeaNl43\neSAMuiFrdqVEMjbaK4nifvSmzVXdi5Ttwx5GArA/k7P0O68yfplcI9GrhHDo\n+amjsOY0/r0rqojvOFAxAlDE+LWxOdD+ONZ++Ur4E4WPgsXwOKrXjaAhV+tt\nweqSTHYXH6Hsp1kbpIfKJK62///fOA/Hirq2NOEx9VOu+npmu7ZHs/c5QGim\np0MyD13r80smYuSHfiI7TbyWFeZvRl7/fxEAGYdhHDqfCwRQheepB/wmfY39\nG40LdS71Ln7Xim+UHP35yRgCHLmVgTCfnuHep0JxDqOYBk1pfPljRo2qVOvR\nyQo81cHi2KjPPdrBAsmZ9usISvi8FAp9/nxHQ4Gvt3mgbd7YXp6qg6HlnOle\n605yfC3vyQneRl4kwnTMwj2d3846AZi9WC83j/NOyFA3BRrCXWb9vwtyPN93\naMHQ\r\n=f6Du\r\n-----END PGP SIGNATURE-----\r\n"
+  },
+  "engines": {
+    "node": ">= 7.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "A Strapi developer"
+    }
+  ],
+  "name": "strapi-plugin-upload",
+  "optionalDependencies": {},
+  "readme": "# Strapi plugin",
+  "readmeFilename": "README.md",
+  "scripts": {
+    "analyze": "node ./node_modules/strapi-helper-plugin/lib/internals/scripts/analyze.js",
+    "analyze:clean": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/rimraf stats.json",
+    "build": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/cross-env NODE_ENV=production node node_modules/strapi-helper-plugin/node_modules/.bin/webpack --config node_modules/strapi-helper-plugin/lib/internals/webpack/webpack.prod.babel.js --color -p --progress",
+    "build:clean": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/rimraf admin/build",
+    "build:dev": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/cross-env NODE_ENV=development node ./node_modules/strapi-helper-plugin/node_modules/.bin/webpack --config node_modules/strapi-helper-plugin/lib/internals/webpack/webpack.prod.babel.js --color -p --progress",
+    "generate": "node ./node_modules/plop/plop.js --plopfile node_modules/strapi-helper-plugin/lib/internals/generators/index.js",
+    "preanalyze": "npm run analyze:clean",
+    "prebuild": "npm run build:clean",
+    "prepublishOnly": "IS_MONOREPO=true npm run build",
+    "prettier": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/prettier --single-quote --trailing-comma es5 --write \"{admin,__{tests,mocks}__}/**/*.js\"",
+    "start": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/cross-env NODE_ENV=development node ./node_modules/strapi-helper-plugin/lib/server",
+    "test": "echo \"Error: no test specified\""
+  },
+  "strapi": {
+    "name": "Files Upload",
+    "icon": "cloud-upload",
+    "description": "Description of upload plugin."
+  },
+  "version": "3.0.0-alpha.14.3"
+}

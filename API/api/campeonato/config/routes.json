@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/campeonatoes",
+      "handler": "Campeonato.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/campeonatoes/count",
+      "handler": "Campeonato.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/campeonatoes/:_id",
+      "handler": "Campeonato.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/campeonatoes",
+      "handler": "Campeonato.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/campeonatoes/:_id",
+      "handler": "Campeonato.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/campeonatoes/:_id",
+      "handler": "Campeonato.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
