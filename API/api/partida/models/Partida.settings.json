@@ -24,10 +24,10 @@
     },
     "time": {
       "collection": "time",
-      "dominant": true,
-      "via": "partida"
+      "via": "partida",
+      "dominant": true
     },
-    "Situacao": {
+    "situacao": {
       "default": "livre",
       "type": "enumeration",
       "enum": [
@@ -37,6 +37,22 @@
         "semi-finais",
         "finais"
       ]
+    },
+    "penaltiCasa": {
+      "default": 0,
+      "type": "integer"
+    },
+    "penaltiFora": {
+      "default": 0,
+      "type": "integer"
+    },
+    "data": {
+      "default": "",
+      "type": "date"
+    },
+    "concluida": {
+      "default": true,
+      "type": "boolean"
     }
   }
 }

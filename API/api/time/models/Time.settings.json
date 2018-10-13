@@ -44,6 +44,12 @@
     "partida": {
       "collection": "partida",
       "via": "time"
+    },
+    "Logo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
     }
   }
 }
