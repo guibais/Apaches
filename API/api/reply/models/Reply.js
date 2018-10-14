@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Lifecycle callbacks for the `Respostacomentario` model.
+ * Lifecycle callbacks for the `Reply` model.
  */
 
 module.exports = {

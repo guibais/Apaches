@@ -1,7 +1,7 @@
 $.getJSON(`${apiUrl}/posts`, data => {
   $.each(data, (key, news) => {
     moment.locale("pt-BR");
-    const { Titulo, user, createdAt, Imagem } = news;
+    const { Titulo, user, createdAt, Imagem, id } = news;
     $("#news").prepend(`
     <div class="item img-top">
         <div class="img-wrap">
@@ -10,17 +10,17 @@ $.getJSON(`${apiUrl}/posts`, data => {
                 ? ""
                 : '<div class="bage"><a href="news-single.html">highlight</a></div>'
             }
-            <a href="news-single.html"><img src="${apiUrl}${
+            <a href="news-single.html?id=${id}"><img src="${apiUrl}${
       Imagem.url
     }" alt="post image"></a>
         </div>
         <div class="info">
-            <a href="news-single.html" class="name">${Titulo}</a>
+            <a href="news-single.html?id=${id}" class="name">${Titulo}</a>
             <div class="wrap">
-                <a href="news-single.html">${moment(
-                  createdAt,
-                  "YYYY-DD-MM hh:mm"
-                ).format("LL")}</a> por <a href="news-single.html">${
+                <a href="news-single.html?id=${id}">${moment(
+      createdAt,
+      "YYYY-DD-MM hh:mm"
+    ).format("LL")}</a> por <a href="news-single.html?id=${id}">${
       user.username
     }</a>
             </div>

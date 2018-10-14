@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "reply",
+  "info": {
+    "name": "reply",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "conteudo": {
+      "default": "",
+      "maxLength": 200,
+      "minLength": 1,
+      "type": "text",
+      "required": true
+    },
+    "user": {
+      "model": "user",
+      "via": "reply",
+      "plugin": "users-permissions"
+    },
+    "comentario": {
+      "model": "comentario",
+      "via": "reply"
+    }
+  }
+}
