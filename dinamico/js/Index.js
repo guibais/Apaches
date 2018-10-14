@@ -1,8 +1,25 @@
-$.getJSON("http://localhost:1337/partidas", function(data) {
+$.getJSON(`${apiUrl}/partidas`, data => {
   data.filter(partida => partida.concluida);
+
   const partidasHeader = x => {
+    moment.locale("pt-BR");
+    // SLIDER
+    $(`#slider${x == 1 ? "Esquerda" : "Direita"} > .match-date`).append(`
+    ${moment(data[x].data, "YYYY-DD-MM HH:mm").format("LL")} / ${moment(
+      data[x].data,
+      "YYYY-DD-MM HH:mm"
+    ).format("LT")} / ${data[x].campeonato.Nome}
+    `);
+    $(`#slider${x == 1 ? "Esquerda" : "Direita"} > .team`).append(`
+    ${data[x].time[0].Nome}
+    <div class="big-count">
+    ${data[x].placarCasa} : ${data[x].placarFora}
+    </div>
+    ${data[x].time[1].Nome}`);
+
+    // HEADER
     $(`#partida${x == 1 ? "Esquerda" : "Direita"} > .championship`).append(
-      `${data[x].campeonato.Nome} - ${data[x].Situacao}`
+      `${data[x].campeonato.Nome} - ${data[x].situacao}`
     );
     $(
       `#partida${x == 1 ? "Esquerda" : "Direita"} > .teams-wrap > .score`
@@ -53,14 +70,14 @@ $.getJSON("http://localhost:1337/partidas", function(data) {
     }
     </a> 
     `);
-    $.getJSON(`http://localhost:1337/times/${time[0].id}`, t => {
+    $.getJSON(`${apiUrl}/times/${time[0].id}`, t => {
       $(`#logoCasa${key}`).append(
-        `<img src=http://localhost:1337${t.Logo.url} alt="team-image">`
+        `<img src=${apiUrl}${t.Logo.url} alt="team-image">`
       );
     });
-    $.getJSON(`http://localhost:1337/times/${time[1].id}`, t => {
+    $.getJSON(`${apiUrl}/times/${time[1].id}`, t => {
       $(`#logoFora${key}`).append(
-        `<img src=http://localhost:1337${t.Logo.url} alt="team-image">`
+        `<img src=${apiUrl}${t.Logo.url} alt="team-image">`
       );
     });
   });

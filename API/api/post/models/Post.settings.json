@@ -16,19 +16,14 @@
       "minLength": 10,
       "maxLength": 50
     },
-    "dataCriacao": {
-      "default": "",
-      "type": "date",
-      "required": true
-    },
     "Tags": {
       "default": "",
       "type": "string"
     },
     "user": {
+      "columnName": "Autor",
       "model": "user",
       "via": "post",
-      "columnName": "Autor",
       "plugin": "users-permissions"
     },
     "Conteudo": {
@@ -39,6 +34,12 @@
     "comentario": {
       "collection": "comentario",
       "via": "post"
+    },
+    "Imagem": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
     }
   }
 }
