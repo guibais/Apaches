@@ -82,8 +82,7 @@ export default function MainMatch(props) {
           </div>
           <div className="col-md-6 col-sm-12 col-xs-12">
             <h6>Últimos jogos</h6>
-            {renderMatches()}
-            <div className="main-lates-matches" />
+            <div className="main-lates-matches">{renderMatches()}</div>
           </div>
         </div>
       </div>
