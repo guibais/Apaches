@@ -9,7 +9,9 @@ export default function MainMatch(props) {
         time,
         situacao,
         data,
-        campeonato
+        campeonato,
+        penaltiCasa,
+        penaltiFora
       } = index;
       return (
         <a href="#" className="item" key={key}>
@@ -19,7 +21,7 @@ export default function MainMatch(props) {
           <span className="teams-wrap">
             <span className="team">
               <span>
-                <img src="images/logo.png" alt="team-image" />
+                <img src="images/logo.png" alt="team" />
               </span>
               <span>{time[0].Nome}</span>
             </span>
@@ -31,11 +33,15 @@ export default function MainMatch(props) {
             <span className="team1">
               <span>{time[1].Nome}</span>
               <span>
-                <img src="team/images/common/team-logo2.png" alt="team-image" />
+                <img src="team/images/common/team-logo2.png" alt="team" />
               </span>
             </span>
           </span>
-          <span className="game-result">(5-4) Penaltis</span>
+          {penaltiFora > 0 || penaltiCasa > 0 ? (
+            <span className="game-result">
+              ({penaltiCasa}-{penaltiFora}) Penaltis
+            </span>
+          ) : null}
         </a>
       );
     });
@@ -51,7 +57,7 @@ export default function MainMatch(props) {
               <img
                 src="team/images/soccer/next-match-bg.jpg"
                 className="next-match-background-img"
-                alt="next-image"
+                alt="next"
               />
               <div className="wrap">
                 <div className="place">Estadio Olimpico Mogi</div>
@@ -60,16 +66,13 @@ export default function MainMatch(props) {
                   <a href="#" className="team">
                     <span>Leopardos</span>
                     <span>
-                      <img src="images/logo.png" alt="team-image" />
+                      <img src="images/logo.png" alt="team" />
                     </span>
                   </a>
                   <div className="vs">vs</div>
                   <a href="#" className="team1">
                     <span>
-                      <img
-                        src="team/images/common/team-logo2.png"
-                        alt="team-image"
-                      />
+                      <img src="team/images/common/team-logo2.png" alt="team" />
                     </span>
                     <span>Capane</span>
                   </a>

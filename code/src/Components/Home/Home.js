@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import { URL } from "../Strings";
 
 import MainSlider from "./Subcomponents/MainSlider";
 import MainMatch from "./Subcomponents/MainMatch";
@@ -12,7 +13,7 @@ export default class Home extends Component {
     };
   }
   componentDidMount() {
-    axios.get(`http://localhost:1337/partidas`).then(res => {
+    axios.get(`${URL}/partidas`).then(res => {
       this.setState({ partidas: res.data });
     });
   }

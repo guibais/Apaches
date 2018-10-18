@@ -45,9 +45,9 @@
       "via": "user"
     },
     "post": {
-      "columnName": "Postagem",
       "model": "post",
-      "via": "user"
+      "via": "user",
+      "columnName": "Postagem"
     },
     "Sobre": {
       "default": "",
@@ -87,6 +87,13 @@
     "reply": {
       "collection": "reply",
       "via": "user"
+    },
+    "Name": {
+      "default": "",
+      "maxLength": 30,
+      "minLength": 5,
+      "type": "string",
+      "required": true
     }
   },
   "collectionName": "users-permissions_user"

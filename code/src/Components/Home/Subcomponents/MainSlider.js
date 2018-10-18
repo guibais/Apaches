@@ -123,14 +123,18 @@ export default function MainSlider(props) {
                 >
                   <a href="#" className="nav-item">
                     <span className="championship">
-                      Campeonato - Quarta de finais
+                      {penultimaPartida.time[0].campeonato.Nome} -{" "}
+                      {penultimaPartida.situacao}
                     </span>
                     <span className="teams-wrap">
                       <span className="team">
                         <img src="images/logo.png" alt="team-logo" />
                       </span>
                       <span className="score">
-                        <span>2:0</span>
+                        <span>
+                          {penultimaPartida.placarCasa}:
+                          {penultimaPartida.placarFora}
+                        </span>
                       </span>
                       <span className="team1">
                         <span>
@@ -141,7 +145,13 @@ export default function MainSlider(props) {
                         </span>
                       </span>
                     </span>
-                    <span className="game-result">(0-0) Penaltis</span>
+                    {penultimaPartida.penaltiFora > 0 ||
+                    penultimaPartida.penaltiCasa > 0 ? (
+                      <span className="game-result">
+                        ({penultimaPartida.penaltiCasa}-
+                        {penultimaPartida.penaltiFora}) Penaltis
+                      </span>
+                    ) : null}
                   </a>
                 </div>
 
@@ -186,7 +196,9 @@ export default function MainSlider(props) {
                   data-target="#main-slider"
                 >
                   <a href="#" className="nav-item">
-                    <span className="championship">Copa Mundo - Final</span>
+                    <span className="championship">
+                      {ultimaPartida.campeonato.Nome} - {ultimaPartida.situacao}{" "}
+                    </span>
                     <span className="teams-wrap">
                       <span className="team">
                         <img
@@ -195,7 +207,10 @@ export default function MainSlider(props) {
                         />
                       </span>
                       <span className="score">
-                        <span>VS</span>
+                        <span>
+                          {ultimaPartida.placarCasa} -{" "}
+                          {ultimaPartida.placarFora}
+                        </span>
                       </span>
 
                       <span className="team1">
@@ -204,7 +219,13 @@ export default function MainSlider(props) {
                         </span>
                       </span>
                     </span>
-                    <span className="game-result">(5-4) Penaltis</span>
+                    {ultimaPartida.penaltiFora > 0 ||
+                    ultimaPartida.penaltiCasa > 0 ? (
+                      <span className="game-result">
+                        ({ultimaPartida.penaltiCasa}-{ultimaPartida.penaltiFora}
+                        ) Penaltis
+                      </span>
+                    ) : null}
                   </a>
                 </div>
               </div>

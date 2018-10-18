@@ -21,9 +21,9 @@
       "type": "string"
     },
     "user": {
+      "columnName": "Autor",
       "model": "user",
       "via": "post",
-      "columnName": "Autor",
       "plugin": "users-permissions"
     },
     "Conteudo": {
@@ -40,6 +40,12 @@
       "via": "related",
       "plugin": "upload",
       "required": false
+    },
+    "identificador": {
+      "default": 0,
+      "type": "integer",
+      "required": true,
+      "unique": true
     }
   }
 }
